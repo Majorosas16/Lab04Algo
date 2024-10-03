@@ -42,15 +42,6 @@ class Character extends HTMLElement {
         this.render();
     }
 
-    
-    // image?: string;
-    // name?: string;
-    // status?: string;
-    // species?: string;
-    // type?: string;
-    // origin?: string;
-    // firstepisode?: string;
-
     render() {
         if(this.shadowRoot){
             this.shadowRoot.innerHTML = `
@@ -62,13 +53,11 @@ class Character extends HTMLElement {
 
             <div id="txt">
             <h1>${this.name || 'No name'}</h1>
-            <p>ID: ${this.uid || 'No ID'}</p>
-            <p>Age: ${this.age || 'No age'}</p>
-            <p>Gender: ${this.gender || 'No gender'}</p>
-            <p>Area: ${this.area || 'No area'}</p>
-            <p>Position: ${this.position || 'No position'}</p>
-            <p>Time In Company: ${this.timeincompany || 'No time'}</p>
-            <p>Experience Years: ${this.xp || 'No experience'}</p>
+            <p>Status: ${this.status || 'No ID'}</p>
+            <p>Specie: ${this.species || 'No specie'}</p>
+            <p>Type: ${this.type || 'No type'}</p>
+            <p>Origin: ${this.origin || 'No origin'}</p>
+            <p>First episode: ${this.firstepisode || 'No episode yet'}</p>
             </div>
 
             </div>

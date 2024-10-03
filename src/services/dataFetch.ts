@@ -4,6 +4,6 @@ export const rickNMorty = async (value:Number) => {
         return rickNMorty;
         //Agrega el error personalizado
     } catch (error) {
-        console.error(error);
+        console.error('Error fetching data:', error);
     }
 }
