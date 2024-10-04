@@ -75,11 +75,15 @@ class AppContainer extends HTMLElement{
     render(){
         if (this.shadowRoot) {
             this.shadowRoot.innerHTML=`
+            <link rel="stylesheet" href="../src/styles.css">
+            <div class="txt">
             <h1>Rick and Morty Cards</h1>
+            <p>Give me a number (1-20) to show your favorite character</p>
 
                 <form class="form">
-                <input class="input" type="number" placeholder="Select the number" min="1" max="20" step="1">
+                <input class="input" type="number" placeholder="Here" min="1" max="20" step="1">
                 </form>
+            </div>
             <div class="cardsDiv"></div>` 
 
         }

@@ -45,6 +45,7 @@ class Character extends HTMLElement {
     render() {
         if(this.shadowRoot){
             this.shadowRoot.innerHTML = `
+            <link rel="stylesheet" href="../src/components/Character/Character.css">
 
             <div id="card">
             <div>

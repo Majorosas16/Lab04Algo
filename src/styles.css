@@ -2,21 +2,63 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
 }
 
-section{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-font-size: 2rem;
-margin-top: 2rem;
+.txt{
+    margin-top: 3rem;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
 }
 
-.container{
+p {
+    font-size: 1.2rem;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 20px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 10rem;
+    width: 200px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #61dafb;
+}
+
+/* Contenedor de las tarjetas */
+.cardsDiv {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para las tarjetas de personajes (asegúrate de que 'character-component' tenga los siguientes estilos) */
+character-component {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+character-component:hover {
+    transform: scale(1.05);
 }
 
